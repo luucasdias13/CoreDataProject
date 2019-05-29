@@ -50,20 +50,8 @@ class ViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
-        
-        
-        
-        
-      /*      if(salvarStr() == true && checkFields() == true){
-                self.performSegue(withIdentifier: "signupFlag", sender: self)
-            } else{
-                let alert = UIAlertController(title: "Did you fill all the fields?", message: "You must have filled all the required fields so you can sign up!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                self.present(alert, animated: true)
-            }
-        } */
-
-    
+  
+  
     func limparCampos(){
         nameField.text = ""
         ageField.text = ""
@@ -82,15 +70,6 @@ class ViewController: UIViewController {
         }
         
     }
-    
-   /* func salvarInt(){
-        let bancoInt = CoreDataFunc()
-        if let age = Int16(ageField.text!){
-            bancoInt.salvarInt(texto: age, table: "idade")
-            
-        }
-    } */
-    
     
     func mostrarConsole(){
         let show = CoreDataFunc()
